@@ -15,6 +15,8 @@ public class News {
     @NonNull
     private Long id;
     @NonNull
+    private String title;
+    @NonNull
     private String message;
     @NonNull
     private Date time;

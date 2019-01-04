@@ -33,7 +33,7 @@ public class HomeControllerTest {
     public void homeModel() throws Exception {
         List<News> news = Stream.iterate(0L, i-> i)
                 .limit(20)
-                .map(i -> new News(i, "News" + i, new Date(), 1.0, 1.0))
+                .map(i -> new News(i, "Title","News" + i, new Date(), 1.0, 1.0))
                 .collect(Collectors.toList());
         NewsRepository newsRepository = mock(NewsRepository.class);
         when(newsRepository.getNews(20)).thenReturn(news);

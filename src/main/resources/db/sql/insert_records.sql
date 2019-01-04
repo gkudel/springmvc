@@ -1,2 +1,2 @@
-INSERT INTO News(Message, Time, Latitude, Longitude) VALUES('Message 1', NOW(), 1.0, 2.0);
-INSERT INTO News(Message, Time, Latitude, Longitude) VALUES('Message 1', NOW(), 1.0, 2.0);
+INSERT INTO News(Title, Message, Time, Latitude, Longitude) VALUES('Title', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.', NOW(), 1.0, 2.0);
+INSERT INTO News(Title, Message, Time, Latitude, Longitude) VALUES('Title', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.',  NOW(), 1.0, 2.0);

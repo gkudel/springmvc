@@ -13,7 +13,7 @@ import java.util.List;
 
 @Repository
 public class NewsRepositoryImpl implements NewsRepository {
-	private static final String SQL_SLECT_NEWS = "SELECT ID, MESSAGE, TIME, LATITUDE, LONGITUDE FROM NEWS WHERE ROWNUM() < :rowNumber ";
+	private static final String SQL_SLECT_NEWS = "SELECT ID, TITLE, MESSAGE, TIME, LATITUDE, LONGITUDE FROM NEWS WHERE ROWNUM() < :rowNumber ";
 
 	@Autowired
 	NamedParameterJdbcOperations jdbcOperations;
@@ -28,6 +28,7 @@ public class NewsRepositoryImpl implements NewsRepository {
 	public News mapRow(ResultSet resultSet, int i) throws SQLException {
 		return new News(
 				resultSet.getLong("ID"),
+				resultSet.getString("TITLE"),
 				resultSet.getString("MESSAGE"),
 				resultSet.getDate("TIME"),
 				resultSet.getDouble("LATITUDE"),
