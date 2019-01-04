@@ -9,7 +9,6 @@
     <h1>The Notepad</h1>
     <div th:if="${not #lists.isEmpty(newsList)}">
         <table>
-            <thead> … </thead>
             <tbody>
             <tr th:each="news : ${newsList}">
                 <td th:text="${news.message}">Message</td>

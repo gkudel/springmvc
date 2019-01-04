@@ -1,6 +1,6 @@
 package org.gk.controllers;
 
-import org.gk.data.repositories.interfaces.NewsRepository;
+import org.gk.business.data.repositories.interfaces.NewsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

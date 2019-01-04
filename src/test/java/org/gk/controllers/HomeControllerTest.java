@@ -1,7 +1,7 @@
 package org.gk.controllers;
 
-import org.gk.data.model.News;
-import org.gk.data.repositories.interfaces.NewsRepository;
+import org.gk.business.data.model.News;
+import org.gk.business.data.repositories.interfaces.NewsRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package org.gk.data.model;
+package org.gk.business.data.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

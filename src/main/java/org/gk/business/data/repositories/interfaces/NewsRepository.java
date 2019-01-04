@@ -1,6 +1,6 @@
-package org.gk.data.repositories.interfaces;
+package org.gk.business.data.repositories.interfaces;
 
-import org.gk.data.model.News;
+import org.gk.business.data.model.News;
 
 import java.util.List;
 
